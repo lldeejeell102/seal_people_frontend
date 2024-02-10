@@ -1,4 +1,6 @@
-const URL = process.env.REACT_APP_URL;
+// const URL = process.env.REACT_APP_URL;
+const URL = "https://seal-people-backend.onrender.com";
+
 
 export const peopleLoader = async () => {
     const response = await fetch(`${URL}/people`)
