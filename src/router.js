@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom';
 import App from './App';
 import Show from './pages/Show'
-import Landing from './components/Index';
+import Landing from './pages/Index';
 import { peopleLoader, personLoader } from './loaders';
 import { createAction, updateAction, deleteAction } from './actions';
 
