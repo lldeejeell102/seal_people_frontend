@@ -1,5 +1,6 @@
 import { useLoaderData, Link, Form } from "react-router-dom"
 
+
 const Landing = () => {
     const people = useLoaderData()
     console.log(people)
@@ -14,7 +15,7 @@ const Landing = () => {
 
 
     return(
-        <div>
+        <div className="people-hp">
             <h3>Create a person</h3>
             <Form action='/create' method='post'>
                 <input type='input' name='name' placeholder="person's name"/>
@@ -28,7 +29,7 @@ const Landing = () => {
                 return(
                     <div key={person._id} className="person">
                         <Link to={`/${person._id}`}>
-                            <h1>{person.name}</h1>
+                            <h1 className="hotpink">{person.name}</h1>
                         </Link>
                         <img src={person.image} alt={person.name}/>
                         <h3>{person.title}</h3>
